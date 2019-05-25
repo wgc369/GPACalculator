@@ -10,5 +10,10 @@ package gpacalculator;
  * @author wug0356
  */
 public abstract class AbstractCourse {
-    
+    String name;
+    int grade;
+    boolean weight;
+    int term;
+    String type;
+    public abstract void condition();
 }

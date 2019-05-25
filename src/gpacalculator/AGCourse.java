@@ -9,6 +9,9 @@ package gpacalculator;
  *
  * @author wug0356
  */
-public class AGCourse {
-    
+public class AGCourse extends AbstractCourse {
+    public void condition()
+    {
+        
+    }
 }

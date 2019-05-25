@@ -14,4 +14,8 @@ public class Course extends AbstractCourse{
     {
         super();
     }
+    public void condition()
+    {
+        
+    }
 }
