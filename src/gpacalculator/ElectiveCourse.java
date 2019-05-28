@@ -10,8 +10,9 @@ package gpacalculator;
  * @author wug0356
  */
 public class ElectiveCourse extends AbstractCourse {
-    public void condition()
+    public ElectiveCourse()
     {
-        
+        super();
     }
+    
 }

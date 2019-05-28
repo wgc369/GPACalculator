@@ -12,17 +12,24 @@ import java.util.ArrayList;
  * @author wug0356
  */
 public class GPACalculator {
-    List CourseList = new ArrayList<Course>();
+    ArrayList<Course> courses = new ArrayList<Course>();
     
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        GradeCalculator();
+
+        //double gpa = GradeCalculator();
     }
-    static void GradeCalculator()
+    public double GradeCalculator()
     {
-        
+        int grade = 0;
+        for(int i=0; i<courses.size(); i++)
+        {
+            int g = courses.get(i).getGrade();
+            grade += g;
+        }
+        return grade/courses.size();
     }
 }

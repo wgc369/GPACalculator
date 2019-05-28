@@ -14,8 +14,8 @@ public class Course extends AbstractCourse{
     {
         super();
     }
-    public void condition()
+    public int getGrade()
     {
-        
+        return 0;
     }
 }

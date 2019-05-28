@@ -12,5 +12,6 @@ package gpacalculator;
 public interface ListModifier {
     public void add(Course c);
     public void remove(Course c);
-    public void modify(Course c, String grade);
+    public void modify(int index, Course c);
+    public Course get(int index);
 }

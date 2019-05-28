@@ -10,8 +10,17 @@ package gpacalculator;
  * @author wug0356
  */
 public class AGCourse extends AbstractCourse {
-    public void condition()
+    String category;
+    public AGCourse()
     {
-        
+        super();
+    }
+    public void setCategory(String s)
+    {
+        category = s;
+    }
+    public String getCategory()
+    {
+        return category;
     }
 }
