@@ -13,13 +13,15 @@ import java.util.ArrayList;
  */
 public class GPACalculator {
     ArrayList<Course> courses = new ArrayList<Course>();
-    
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-
+        GPACalculator calculator = new GPACalculator();
+        calculator.GradeCalculator();
+        
         //double gpa = GradeCalculator();
     }
     public double GradeCalculator()
