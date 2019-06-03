@@ -9,11 +9,20 @@ package gpacalculator;
  *
  * @author wug0356
  */
-public class AGCourse extends AbstractCourse {
+public class AGCourse extends Course {
     String category;
     public AGCourse()
     {
         super();
+    }
+    public AGCourse(String name, int grade, double gradeMark, boolean weight, String term, String category)
+    {
+        super.name = name;
+        super.grade = grade;
+        super.gradeMark=gradeMark;
+        super.weight = weight;
+        super.term = term;
+        setCategory(category);
     }
     public void setCategory(String s)
     {
@@ -22,5 +31,9 @@ public class AGCourse extends AbstractCourse {
     public String getCategory()
     {
         return category;
+    }
+    public String toString()
+    {
+        return name +", "+ grade + "th Grade, " + gradeMark + "point, " + "weight:" + weight + ", " + term + "Term, " + category;
     }
 }

@@ -9,9 +9,8 @@ package gpacalculator;
  *
  * @author wug0356
  */
-public interface ListModifier {
+public interface Modifiable {
     public void add(Course c);
-    public void remove(Course c);
-    public void modify(int index, Course c);
+    public void remove(int c);
     public Course get(int index);
 }
